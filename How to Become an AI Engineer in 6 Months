@@ -1,0 +1,898 @@
+# How to Become an AI Engineer in 6 Months
+
+> A practical roadmap with curated resources for every skill you need to build real AI systems.
+
+---
+
+## Table of Contents
+
+- [What an AI Engineer Actually Does](#what-an-ai-engineer-actually-does)
+- [Month 1: Coding Fundamentals](#month-1-get-solid-enough-in-coding-and-the-fundamentals)
+- [Month 2: LLM App Development](#month-2-master-llm-app-development)
+- [Month 3: RAG (Retrieval-Augmented Generation)](#month-3-learn-rag-properly)
+- [Month 4: Agents, Tools, Workflows, and Evals](#month-4-agents-tools-workflows-and-evals)
+- [Month 5: Deployment, Product Thinking, and Reliability](#month-5-deployment-product-thinking-and-reliability)
+- [Month 6: Specialize and Become Hireable](#month-6-specialize-and-become-hireable)
+- [Conclusion & Salary Expectations](#conclusion)
+
+---
+
+## What an AI Engineer Actually Does
+
+Most AI engineers don't train models from scratch. They **build products and systems on top of existing models**. That typically includes:
+
+- Connecting to LLM APIs
+- Designing prompts and context flows
+- Building chat, search, or automation systems
+- Integrating tools, databases, and external APIs
+- Handling structured outputs
+- Improving reliability, cost, and latency
+- Deploying AI features into real applications
+
+In practice, an AI engineer sits somewhere between software engineering, product engineering, automation, and applied AI.
+
+If you can build real LLM apps, retrieval systems, automations, and production-ready workflows, you're already much closer to being employable than most beginners.
+
+---
+
+## Month 1: Get Solid Enough in Coding and the Fundamentals
+
+**Goal:** Become a functional Python developer. Stop Googling basic syntax and be able to build simple programs confidently.
+
+AI engineering is first and foremost software engineering. Everything in the later months assumes you can write clean Python, use the terminal, call APIs, and manage a codebase.
+
+---
+
+### 1. Python
+
+Python is the language of AI engineering. Almost every library, API, and tutorial you'll encounter is in Python.
+
+> **Key tip:** The most common mistake beginners make is consuming content passively. Fight this by coding every single example as you go.
+
+| Resource | Link | Notes |
+|---|---|---|
+| Python for Everybody (Coursera) | [Link](https://www.coursera.org/specializations/python) | Best starting point for beginners. Free to audit. |
+| freeCodeCamp Python Course | [Link](https://www.youtube.com/watch?v=rfscVS0vtbw) | Comprehensive 4-hour video covering all fundamentals. |
+| CS50P: Intro to Programming with Python | [Link](https://cs50.harvard.edu/python/) | More rigorous. Includes problem sets and a final project. |
+| Official Python Docs (Tutorial) | [Link](https://docs.python.org/3/tutorial/) | Authoritative reference. |
+
+**What to focus on:**
+- Variables, data types, loops, conditionals, functions
+- Lists, dictionaries, sets, tuples
+- File I/O and working with JSON
+- Classes and basic OOP
+- Error handling with `try/except`
+- Virtual environments (`venv`) and `pip`
+- Package management and `requirements.txt`
+
+**Practice project:** Build a CLI tool like a personal expense tracker that reads/writes to a JSON file, or a script that calls a public weather API and prints formatted results.
+
+---
+
+### 2. Git and GitHub
+
+Git is how professional developers save and share code. You'll need it constantly.
+
+> **Key tip:** Don't memorize commands — understand what problem Git is solving (tracking changes, enabling collaboration, letting you undo mistakes).
+
+| Resource | Link | Notes |
+|---|---|---|
+| GitHub Skills | [Link](https://skills.github.com/) | Official interactive courses built inside GitHub. |
+| Learn Git Branching | [Link](https://learngitbranching.js.org/) | Best visual tool for understanding branches and merges. |
+| Pro Git Book | [Link](https://git-scm.com/book/en/v2) | The comprehensive reference. |
+
+**What to focus on:**
+- `git init`, `add`, `commit`, `push`, `pull`
+- Branching and merging
+- Understanding `.gitignore`
+- Creating repos on GitHub and pushing local projects
+- Writing basic `README` files
+
+**Practice:** Every single project you build — even small scripts — should live in a GitHub repo.
+
+---
+
+### 3. CLI / Terminal Basics
+
+As an AI engineer you'll be running scripts, installing packages, managing servers, and navigating files entirely from the command line.
+
+| Resource | Link |
+|---|---|
+| The 50 Most Popular Linux & Terminal Commands | [Link](https://www.youtube.com/watch?v=ZtqBQ68cfJc) |
+| The Missing Semester of Your CS Education (MIT) | [Link](https://missing.csail.mit.edu/) |
+
+**What to focus on:** `cd`, `ls`, `pwd`, `mkdir`, `rm`, `cat`, `less`, `grep`, environment variables, and basic understanding of `PATH`.
+
+---
+
+### 4. JSON, APIs, HTTP, and Async Basics
+
+You'll be calling LLM APIs from day one of Month 2. You need to understand how web APIs work first.
+
+| Resource | Link |
+|---|---|
+| HTTP Basics – MDN Web Docs | [Link](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview) |
+| REST API Tutorial | [Link](https://restfulapi.net/) |
+| Python `requests` library docs | [Link](https://requests.readthedocs.io/en/latest/) |
+| Python async/await (Real Python) | [Link](https://realpython.com/async-io-python/) |
+
+**What to focus on:**
+- GET, POST requests and how to make them in Python
+- Reading and writing JSON
+- HTTP status codes (200, 400, 401, 404, 500)
+- What an API key is and basic auth patterns
+- What `async def` and `await` do and why they exist
+
+**Practice project:** Write a Python script that calls [Open-Meteo](https://open-meteo.com/) (no API key needed) and formats the result as clean JSON output.
+
+---
+
+### 5. Basic SQL and Pandas
+
+You'll regularly need to inspect, query, and manipulate data. SQL basics and pandas fluency will save you constantly.
+
+| Resource | Link |
+|---|---|
+| SQLBolt | [Link](https://sqlbolt.com/) |
+| Pandas Official Getting Started Guide | [Link](https://pandas.pydata.org/docs/getting_started/index.html) |
+| Kaggle Pandas Course | [Link](https://www.kaggle.com/learn/pandas) |
+
+**What to focus on:**
+- SQL: `SELECT`, `WHERE`, `GROUP BY`, `JOIN`, `ORDER BY`
+- Pandas: loading CSVs, filtering rows, selecting columns, basic aggregations
+
+---
+
+### 6. FastAPI
+
+| Resource | Link |
+|---|---|
+| FastAPI Official Tutorial | [Link](https://fastapi.tiangolo.com/tutorial/) |
+| Python API Development – freeCodeCamp (19hr) | [Link](https://www.youtube.com/watch?v=ZtqBQ68cfJc) |
+
+**What to focus on:** `GET` and `POST` endpoints, path and query parameters, request bodies with Pydantic, running `uvicorn`, and using FastAPI's built-in `/docs` interface.
+
+---
+
+### Month 1 Milestone ✅
+
+By the end of this month you should be able to:
+
+- [ ] Write Python programs that read/write files, call APIs, and handle errors
+- [ ] Version your code with Git and push projects to GitHub
+- [ ] Navigate the terminal without hesitation
+- [ ] Understand what an HTTP request is and make one in Python
+- [ ] Query a SQLite database with basic SQL
+- [ ] Build and run a simple FastAPI app locally
+
+---
+
+## Month 2: Master LLM App Development
+
+**Goal:** Build real AI-powered applications using the OpenAI and Anthropic APIs. Write prompts that work reliably, get structured data out of models, make them call your functions, and handle everything that can go wrong.
+
+---
+
+### 1. Prompting Fundamentals
+
+Prompting is the craft of writing instructions that produce consistent, reliable outputs from models that are fundamentally probabilistic.
+
+| Resource | Link | Notes |
+|---|---|---|
+| Anthropic's Interactive Prompt Engineering Tutorial | [Link](https://github.com/anthropics/prompt-eng-interactive-tutorial) | 9 chapters with exercises. Run as Jupyter notebooks. |
+| Anthropic Prompt Engineering Docs | [Link](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview) | Official reference. |
+| OpenAI Prompt Engineering Guide | [Link](https://platform.openai.com/docs/guides/prompt-engineering) | Official guide from OpenAI. |
+| PromptingGuide.ai | [Link](https://www.promptingguide.ai/) | Covers basic to advanced strategies. |
+
+**What to focus on:**
+- The difference between system and user messages
+- Why specificity matters
+- Chain-of-thought prompting ("think step by step")
+- Few-shot prompting (using examples)
+- How small wording changes can dramatically shift output quality
+
+**Practice:** Take a real task (summarize a document, extract key info, classify feedback) and write 5 different prompts for it. Compare outputs.
+
+---
+
+### 2. Structured Outputs / JSON Schemas
+
+In real applications you almost never want raw text — you want structured data you can parse, store, and use in your code.
+
+| Resource | Link |
+|---|---|
+| OpenAI Structured Outputs Guide | [Link](https://platform.openai.com/docs/guides/structured-outputs) |
+| Instructor library | [Link](https://python.useinstructor.com/) |
+| OpenAI Cookbook: Structured Outputs | [Link](https://developers.openai.com/cookbook/examples/structured_outputs_intro/) |
+
+> **Instructor** is what most production AI engineers actually use — it works with OpenAI, Anthropic, Google, and 15+ other providers with automatic retries when validation fails.
+
+**Practice project:** Build an invoice/receipt parser. Input raw text → return a structured Python object with fields like `invoice_number`, `amount`, `items`, `due_date`.
+
+---
+
+### 3. Function / Tool Calling
+
+Tool calling transforms an LLM from a text generator into something that can take actions — search the web, query a database, call your API, run code.
+
+> **How it works:** The model doesn't execute your functions. It returns a structured call with the function name and arguments. Your code then executes the call and sends the result back.
+
+| Resource | Link |
+|---|---|
+| OpenAI Function Calling Guide | [Link](https://platform.openai.com/docs/guides/function-calling) |
+| Anthropic Tool Use Docs | [Link](https://docs.anthropic.com/en/docs/build-with-claude/tool-use) |
+| OpenAI Cookbook: How to Call Functions | [Link](https://github.com/openai/openai-cookbook/blob/main/examples/How_to_call_functions_with_chat_models.ipynb) |
+
+**Practice project:** Build an assistant with three tools: `get_weather(city)`, `calculate(expression)`, and `search_notes(query)`. Wire them up and watch the model decide which one to call.
+
+---
+
+### 4. Streaming Responses
+
+Streaming shows the model's output word by word — rather than waiting for the full response — making your apps feel dramatically faster and more alive.
+
+| Resource | Link |
+|---|---|
+| OpenAI Streaming Docs | [Link](https://platform.openai.com/docs/api-reference/streaming) |
+| Anthropic Streaming Docs | [Link](https://docs.anthropic.com/en/api/messages-streaming) |
+| How Streaming LLM APIs Work – Simon Willison | [Link](https://til.simonwillison.net/llms/streaming-llm-apis) |
+
+> **Tip:** Streaming is almost always the right choice for user-facing apps. Nobody wants to stare at a loading spinner for 10 seconds.
+
+---
+
+### 5. Conversation State
+
+LLMs are stateless — they have no memory between calls. Conversation history is something **you** manage by sending the full message list with every request.
+
+| Resource | Link |
+|---|---|
+| OpenAI Chat Completions: Managing Conversations | [Link](https://platform.openai.com/docs/guides/conversation-state) |
+| Anthropic Messages API Docs | [Link](https://docs.anthropic.com/en/api/messages) |
+
+**Practice project:** Build a multi-turn terminal chatbot. Each turn appends to the messages list. Add a `/reset` command and print the current token count after each exchange.
+
+---
+
+### 6. Cost, Latency, and Token Basics
+
+Shipping AI apps without understanding costs and tokens is how you end up with surprise bills and slow apps.
+
+| Resource | Link |
+|---|---|
+| OpenAI Pricing Page | [Link](https://openai.com/api/pricing) |
+| Anthropic Pricing Page | [Link](https://www.anthropic.com/pricing) |
+| OpenAI Tokenizer Tool | [Link](https://platform.openai.com/tokenizer) |
+| Tiktoken (Python library) | [Link](https://github.com/openai/tiktoken) |
+
+**Key concept:** A token is roughly 4 characters / ¾ of a word. Input and output tokens are priced differently. Don't use GPT-4/Opus for everything — cheaper models are often good enough for simple tasks.
+
+---
+
+### 7. Failure Handling
+
+LLM APIs fail. Rate limits get hit, responses time out, the model returns malformed JSON. Handling failures gracefully separates a demo from a production app.
+
+| Resource | Link |
+|---|---|
+| OpenAI Error Codes Reference | [Link](https://platform.openai.com/docs/guides/error-codes) |
+| Anthropic Error Handling Docs | [Link](https://docs.anthropic.com/en/api/errors) |
+| Tenacity (Python retry library) | [Link](https://tenacity.readthedocs.io/) |
+
+**What to focus on:** Rate limit errors (429) and exponential backoff, timeout handling, validating model output before using it, and fallback strategies.
+
+---
+
+### 8. Prompt Injection Awareness
+
+Prompt injection is the #1 security risk in LLM applications. It happens when untrusted user input overrides or alters your system instructions.
+
+| Resource | Link |
+|---|---|
+| OWASP Top 10 for LLM Apps – LLM01: Prompt Injection | [Link](https://genai.owasp.org/llmrisk/llm01-prompt-injection/) |
+| OWASP Prompt Injection Prevention Cheat Sheet | [Link](https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html) |
+| Evidently AI: What is Prompt Injection | [Link](https://www.evidentlyai.com/llm-guide/prompt-injection-llm) |
+
+---
+
+### Month 2 Milestone ✅
+
+By the end of this month you should be able to:
+
+- [ ] Write prompts that produce consistent, reliable outputs for a given task
+- [ ] Get structured JSON data out of any model using Pydantic + Instructor
+- [ ] Wire up tool calling so a model can call your Python functions
+- [ ] Stream responses in real time through a FastAPI endpoint
+- [ ] Manage multi-turn conversation history properly
+- [ ] Estimate the token cost of a request before sending it
+- [ ] Handle API errors, timeouts, and bad outputs without crashing
+- [ ] Explain what prompt injection is and apply basic defenses
+
+---
+
+## Month 3: Learn RAG Properly
+
+**Goal:** Build systems that let LLMs answer questions from your documents — not just from their training data. Produce answers that are grounded, accurate, and citable.
+
+RAG is the most in-demand practical skill in AI engineering right now. Almost every real enterprise AI use case is built on it.
+
+---
+
+### 1. Embeddings
+
+A text embedding is text projected into a high-dimensional vector space. Text that is semantically similar ends up close together in that space — which is what makes similarity search possible.
+
+| Resource | Link |
+|---|---|
+| Stack Overflow Blog: An Intuitive Introduction to Text Embeddings | [Link](https://stackoverflow.blog/2023/11/09/an-intuitive-introduction-to-text-embeddings/) |
+| Google ML Crash Course: Embeddings | [Link](https://developers.google.com/machine-learning/crash-course/embeddings) |
+| HuggingFace: Getting Started With Embeddings | [Link](https://huggingface.co/blog/getting-started-with-embeddings) |
+| OpenAI Embeddings Guide | [Link](https://platform.openai.com/docs/guides/embeddings) |
+
+**Practice:** Take 20 sentences, embed them, and write a simple nearest-neighbor search that returns the 3 most similar to a query. This is RAG in miniature.
+
+---
+
+### 2. Chunking
+
+Your documents are too large to embed as a whole. Chunking breaks them into smaller pieces before embedding. **How you chunk directly affects your system's ability to find relevant information.**
+
+| Resource | Link |
+|---|---|
+| Weaviate: Chunking Strategies for RAG | [Link](https://weaviate.io/blog/chunking-strategies-for-rag) |
+| Unstructured: Chunking for RAG Best Practices | [Link](https://unstructured.io/blog/chunking-for-rag-best-practices) |
+| LangChain Text Splitters Docs | [Link](https://python.langchain.com/docs/concepts/text_splitters/) |
+
+> **Beginner tip:** Start with `RecursiveCharacterTextSplitter` from LangChain with `chunk_size=500` and `chunk_overlap=50`. A good starting point is ~250 tokens with 10-20% overlap between chunks.
+
+**Core trade-off:** Chunks too large → lose retrieval precision. Chunks too small → lose context.
+
+---
+
+### 3. Vector Databases
+
+Once you have embeddings, you need somewhere to store and search them efficiently.
+
+| Database | Best For | Link |
+|---|---|---|
+| Chroma | Local prototyping, fast setup | [Link](https://docs.trychroma.com/) |
+| Pinecone | Managed turnkey scale | [Link](https://www.pinecone.io/learn/) |
+| Qdrant | Open-source, advanced filtering, self-hosting | [Link](https://qdrant.tech/documentation/) |
+| pgvector | Already on PostgreSQL, no new infrastructure | [Link](https://github.com/pgvector/pgvector) |
+
+**Practice project:** Index 50-100 pages from any public documentation into Chroma with metadata (source URL, section title). Write a query function that retrieves the 5 most relevant chunks for any question.
+
+---
+
+### 4. Metadata Filtering
+
+Raw similarity search alone isn't enough. Metadata filtering lets you constrain retrieval to a relevant subset — by date, source, document type, user, category, or any other attribute.
+
+| Resource | Link |
+|---|---|
+| Pinecone: Metadata Filtering Guide | [Link](https://docs.pinecone.io/guides/data/filter-with-metadata) |
+| LlamaIndex: Metadata Filters Guide | [Link](https://docs.llamaindex.ai/en/stable/module_guides/querying/node_postprocessors/node_postprocessors/) |
+
+> **What makes the difference:** Tagging every chunk at ingestion time (source filename, page number, section, date, category) so users can ask "only show results from Q4 reports."
+
+---
+
+### 5. Reranking
+
+After first-stage retrieval, a reranker re-scores results based on true contextual relevance — not just vector proximity. The result is dramatically better retrieval quality with only a modest latency cost.
+
+**Pattern:** Embed and search (fast, approximate) → rerank top-k (slower, more accurate).
+
+| Resource | Link |
+|---|---|
+| Cohere Reranking Docs | [Link](https://docs.cohere.com/docs/reranking-with-cohere) |
+| LangChain: Cohere Reranker Integration | [Link](https://python.langchain.com/docs/integrations/retrievers/cohere-reranker/) |
+
+---
+
+### 6. Retrieval Quality Issues
+
+Most RAG failures aren't model failures — they're retrieval failures.
+
+| Issue | Cause | Fix |
+|---|---|---|
+| Semantic drift | Query embedding doesn't match chunk embedding | Query rewriting or HyDE |
+| Chunk boundary problems | Relevant info split across two chunks | Increase overlap or use semantic chunking |
+| Missing metadata context | Wrong document/date retrieved | Use metadata filtering |
+| Top-k too small | Right chunk not in top 5 | Increase `top_k`, reduce after reranking |
+
+| Resource | Link |
+|---|---|
+| LangChain: Query Transformations | [Link](https://python.langchain.com/docs/how_to/#query-analysis) |
+| Pinecone: Improving Retrieval Quality | [Link](https://www.pinecone.io/learn/retrieval-augmented-generation/#retrieval-quality) |
+
+---
+
+### 7. Hallucination Reduction
+
+RAG dramatically reduces hallucinations vs a vanilla LLM — but doesn't eliminate them. By supplying retrieved facts at runtime, RAG anchors responses to real sources.
+
+| Resource | Link |
+|---|---|
+| Zep: Reducing LLM Hallucinations – A Developer's Guide | [Link](https://www.getzep.com/ai-agents/reducing-llm-hallucinations/) |
+| Voiceflow: 5 Ways to Reduce LLM Hallucinations | [Link](https://www.voiceflow.com/blog/prevent-llm-hallucinations) |
+
+**Key strategy:** Prompt the model to answer only from provided context and say "I don't know" when the answer isn't there.
+
+---
+
+### 8. Citations and Grounding
+
+A grounded RAG system doesn't just answer — it tells you where the answer came from. This is critical for user trust and debugging.
+
+| Resource | Link |
+|---|---|
+| Anthropic: Giving Claude Sources | [Link](https://docs.anthropic.com/en/docs/build-with-claude/citations) |
+| LangChain: RAG with Sources | [Link](https://python.langchain.com/docs/how_to/qa_sources/) |
+
+---
+
+### 9. Your RAG Framework: LangChain or LlamaIndex
+
+| Framework | Best For |
+|---|---|
+| **LlamaIndex** | RAG-first. Abstracts ingestion, chunking, embedding, querying into a few lines. Start here for Month 3. |
+| **LangChain** | Orchestration engines, multi-agent workflows, tool calling, conditional chains. Use in Month 4. |
+
+| Resource | Link |
+|---|---|
+| LlamaIndex: Introduction to RAG | [Link](https://developers.llamaindex.ai/python/framework/understanding/rag/) |
+| LlamaIndex Starter Tutorial | [Link](https://developers.llamaindex.ai/python/framework/getting_started/starter_example/) |
+| LangChain: Build a RAG Agent | [Link](https://docs.langchain.com/oss/python/langchain/rag) |
+
+**Practice project:** Build a "chat with your docs" app. Ingest 10-20 PDF or text files. Build a FastAPI endpoint that accepts a question, retrieves the top 5 chunks with reranking, and returns a cited answer from Claude or OpenAI. **This is a real portfolio piece.**
+
+---
+
+### Month 3 Milestone ✅
+
+By the end of this month you should be able to:
+
+- [ ] Explain what an embedding is and why similar text produces similar vectors
+- [ ] Chunk any document intelligently using appropriate strategies
+- [ ] Store and query embeddings in a vector database with metadata filtering
+- [ ] Add a reranking step to improve retrieval quality
+- [ ] Debug common retrieval failures systematically
+- [ ] Build a complete end-to-end RAG pipeline that returns grounded, cited answers
+
+---
+
+## Month 4: Agents, Tools, Workflows, and Evals
+
+**Goal:** Build AI systems that can take sequences of actions autonomously, wire together multi-step workflows, and critically evaluate whether they're working.
+
+This is where AI engineering gets genuinely complex. These skills separate junior AI engineers from people who can own an entire AI feature end to end.
+
+---
+
+### 1. Agent Loops
+
+An agent is not magic — it's a surprisingly simple pattern. Think of it as a goal-driven system that constantly cycles through **observing → reasoning → acting**.
+
+| Resource | Link | Notes |
+|---|---|---|
+| Anthropic: Building Effective Agents | [Link](https://www.anthropic.com/research/building-effective-agents) | The single best piece of writing on agents in production. Read this first. |
+| OpenAI: A Practical Guide to Building Agents | [Link](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf) | Covers agent patterns, guardrails, and safety. |
+| freeCodeCamp: The Open Source LLM Agent Handbook | [Link](https://www.freecodecamp.org/news/the-open-source-llm-agent-handbook/) | Practical guide covering LangGraph, CrewAI, planning, memory, and tool use. |
+| LangChain Academy: Introduction to LangGraph | [Link](https://academy.langchain.com/courses/intro-to-langgraph) | Official free course for the most widely used agent orchestration framework. |
+
+**Practice:** Build an agent from scratch **without any framework** — just the OpenAI or Anthropic API directly. Give it 3 tools, a goal, and a loop. This is the most valuable thing you can do to understand what frameworks abstract.
+
+---
+
+### 2. Tool Selection
+
+Writing good tools is half the job. The descriptions for your tools and parameters are the user manual for the LLM. **If the manual is vague, the LLM will misuse the tool.**
+
+| Resource | Link |
+|---|---|
+| OpenAI: Function Calling Best Practices | [Link](https://platform.openai.com/docs/guides/function-calling/best-practices) |
+| Anthropic: Tool Use Best Practices | [Link](https://docs.anthropic.com/en/docs/build-with-claude/tool-use/implement-tool-use#best-practices-for-tool-definitions) |
+
+> **Self-check:** "If I had no documentation and only this JSON schema, would I know exactly when and how to call this?" If not, it needs more work.
+
+---
+
+### 3. State Management
+
+In LangGraph, state is a shared memory object that flows through the graph, storing all relevant information — messages, variables, intermediate results, and decision history.
+
+| Resource | Link |
+|---|---|
+| LangGraph Docs: State Management | [Link](https://langchain-ai.github.io/langgraph/concepts/low_level/#state) |
+| DataCamp: LangGraph Agents Tutorial | [Link](https://www.datacamp.com/tutorial/langgraph-agents) |
+| Real Python: LangGraph in Python | [Link](https://realpython.com/langgraph-python/) |
+
+---
+
+### 4. Retries and Failure Handling in Agents
+
+Agents fail differently than regular LLM calls. A bad tool call mid-loop can corrupt state, cause infinite loops, or silently produce wrong answers.
+
+| Resource | Link |
+|---|---|
+| LangGraph: Error Handling and Retries | [Link](https://langchain-ai.github.io/langgraph/how-tos/autofill-tool-errors/) |
+| OpenAI Practical Agents Guide: Guardrails section | [Link](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf) |
+
+**What to focus on:** Maximum iteration limits, per-tool retry with exponential backoff, catching exceptions without crashing the agent, and when to surface a failure to the user vs retry silently.
+
+---
+
+### 5. When NOT to Use Agents
+
+This is one of the most important and most overlooked skills. Agents are slow, expensive, unpredictable, and hard to debug.
+
+**Decision framework:**
+
+| Situation | Solution |
+|---|---|
+| Task can be solved in one prompt | Single LLM call |
+| Steps are fixed and predictable | Workflow |
+| Steps are genuinely unpredictable | Agent |
+
+| Resource | Link |
+|---|---|
+| Anthropic: Building Effective Agents – When to Use Agents | [Link](https://www.anthropic.com/research/building-effective-agents) |
+| Simon Willison: Designing Agentic Loops | [Link](https://simonwillison.net/2025/Sep/30/designing-agentic-loops/) |
+
+> **Memorize:** A chain of 3 fixed LLM calls will always be faster, cheaper, and more debuggable than an agent that could make 3 calls.
+
+---
+
+### 6. Multi-Step Workflows
+
+Between "single prompt" and "full agent" is a vast productive middle ground. Common patterns:
+
+- **Prompt chaining** — output of one call is input to the next
+- **Routing** — classify input and send to specialized handlers
+- **Parallelization** — run multiple calls simultaneously and aggregate
+- **Orchestrator-subagent** — one LLM plans, others execute
+
+| Resource | Link |
+|---|---|
+| Anthropic: Workflow Patterns | [Link](https://www.anthropic.com/research/building-effective-agents#workflow-patterns) |
+| LangGraph: Multi-Agent Networks | [Link](https://langchain-ai.github.io/langgraph/concepts/multi_agent/) |
+
+**Practice project:** Build a 3-step content pipeline: (1) extract key facts from an article → (2) generate a tweet, LinkedIn post, and summary in parallel → (3) score all three and pick the best.
+
+---
+
+### 7. Evaluation Harnesses
+
+Evals are how you know if your AI system is actually working — not just on the examples you tested by hand, but systematically across hundreds of inputs.
+
+| Tool | Link | Notes |
+|---|---|---|
+| DeepEval | [Link](https://deepeval.com/docs/getting-started) | Open-source, pytest-inspired. 50+ built-in metrics. |
+| Promptfoo | [Link](https://github.com/promptfoo/promptfoo) | CLI for testing and evaluating LLM apps. CI/CD integration. |
+| LangSmith | [Link](https://smith.langchain.com/) | Tracing, debugging, and evaluation for LangChain/LangGraph. |
+| Ragas | [Link](https://docs.ragas.io/) | Specialized for RAG pipelines. Measures faithfulness, relevancy, precision, recall. |
+
+> **Critical mindset:** Every prompt change, model swap, or retrieval tweak you make without running evals is a gamble. The engineers who ship reliable AI products run evals constantly.
+
+---
+
+### 8. Task Success Metrics
+
+| Resource | Link |
+|---|---|
+| Hamel Husain: Your AI Product Needs Evals | [Link](https://hamel.dev/blog/posts/evals/) |
+| OpenAI Evals Framework | [Link](https://github.com/openai/evals) |
+
+**Practice project:** Take your RAG pipeline from Month 3 and build a proper eval harness. Create 30 Q&A pairs, run them through your pipeline, and score for relevance, faithfulness, and completeness using DeepEval. Then change one thing (chunk size, model, top-k) and re-run.
+
+---
+
+### Month 4 Milestone ✅
+
+By the end of this month you should be able to:
+
+- [ ] Explain what an agent loop is and implement one from scratch without a framework
+- [ ] Write tool descriptions that get selected correctly and reliably
+- [ ] Manage agent state properly using LangGraph or equivalent
+- [ ] Handle failures inside agent loops without crashing
+- [ ] Decide confidently whether a task needs an agent, a workflow, or a single prompt
+- [ ] Build multi-step workflows that chain, route, and parallelize LLM calls
+- [ ] Write automated evals that catch regressions when you change prompts or models
+- [ ] Define and measure task success metrics for any AI system you build
+
+---
+
+## Month 5: Deployment, Product Thinking, and Reliability
+
+**Goal:** Take everything you've built and make it production-ready. Deploy an AI app that handles real users, real traffic, and real failures.
+
+This is where most AI engineers stall. They can build a great demo but can't ship a product that survives contact with the real world.
+
+---
+
+### 1. FastAPI Production Patterns
+
+A single `uvicorn` process with `--reload` is fine for building. In production it becomes a bottleneck the moment real traffic arrives.
+
+| Resource | Link |
+|---|---|
+| FastAPI Deployment Docs | [Link](https://fastapi.tiangolo.com/deployment/) |
+| FastAPI Production Deployment Guide (CYS Docs) | [Link](https://craftyourstartup.com/cys-docs/fastapi-production-deployment/) |
+| FastAPI Best Practices for Production | [Link](https://fastlaunchapi.dev/blog/fastapi-best-practices-production-2026) |
+
+**What to focus on:** Gunicorn with Uvicorn workers, health check endpoints, CORS middleware, async database sessions, and background tasks.
+
+---
+
+### 2. Docker
+
+Docker stops the "it works on my machine" problem and makes scaling straightforward. You need to be able to containerize your FastAPI + LLM app and deploy it anywhere.
+
+| Resource | Link |
+|---|---|
+| Docker Official Getting Started Guide | [Link](https://docs.docker.com/get-started/) |
+| freeCodeCamp: Build and Deploy a Multi-Agent AI System with Docker | [Link](https://www.freecodecamp.org/news/build-and-deploy-multi-agent-ai-with-python-and-docker/) |
+| DataCamp: Deploy LLM Applications Using Docker | [Link](https://www.datacamp.com/tutorial/deploy-llm-applications-using-docker) |
+| Docker Containerization for LLM Apps | [Link](https://apxml.com/courses/python-llm-workflows/chapter-10-deployment-operational-practices/containerization-docker-llm-apps) |
+
+**Practice project:** Containerize your RAG app from Month 3. Create a `docker-compose.yml` that runs your FastAPI app, a vector database, and Redis for caching.
+
+---
+
+### 3. Background Jobs and Queues
+
+LLM calls are slow. Background jobs let you accept a request immediately, process it async, and notify the user when it's done.
+
+| Resource | Link | Use Case |
+|---|---|---|
+| FastAPI Background Tasks Docs | [Link](https://fastapi.tiangolo.com/tutorial/background-tasks/) | Simple fire-and-forget tasks |
+| Celery Official Getting Started Guide | [Link](https://docs.celeryq.dev/en/stable/getting-started/introduction.html) | Heavier async processing |
+
+---
+
+### 4. Auth and API Key Security
+
+If your AI app has an API, it needs authentication. Without it, anyone can use your endpoints and burn through your LLM credits.
+
+| Resource | Link |
+|---|---|
+| FastAPI Security Docs | [Link](https://fastapi.tiangolo.com/tutorial/security/) |
+| OWASP API Security Top 10 | [Link](https://owasp.org/API-Security/) |
+| Auth0: API Auth Best Practices | [Link](https://auth0.com/docs/get-started/authentication-and-authorization) |
+
+**What to focus on:** JWT tokens, API key management, rate limiting per user/key, never storing secrets in code, and the difference between authentication and authorization.
+
+---
+
+### 5. Logging and Observability
+
+LLM apps have a unique challenge: the model can return a `200` status code and still produce a useless or hallucinated answer. Traditional monitoring doesn't catch this.
+
+| Tool | Link | Notes |
+|---|---|---|
+| Langfuse | [Link](https://langfuse.com/docs/observability/overview) | Open-source. Traces every LLM request with prompt, response, tokens, latency, cost. |
+| LangSmith | [Link](https://smith.langchain.com/) | From LangChain team. One env variable to set up if using LangChain/LangGraph. |
+| Python Structlog | [Link](https://www.structlog.org/) | Structured JSON logging — far better than `print()` for production. |
+
+---
+
+### 6. Prompt and Version Management
+
+In production, **your prompts are code**. They need version control, testing, and rollback ability.
+
+| Resource | Link |
+|---|---|
+| Langfuse Prompt Management | [Link](https://langfuse.com/docs/prompts) |
+| Anthropic Prompt Management Best Practices | [Link](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview) |
+
+**What to focus on:** Storing prompts outside your application code, versioning every prompt change, A/B testing variants in production, and having a rollback strategy.
+
+---
+
+### 7. Cost Monitoring and Rate Limits
+
+LLM APIs charge per token. Without cost controls, a traffic spike or a bug can burn through hundreds of dollars in minutes.
+
+| Resource | Link |
+|---|---|
+| OpenAI Usage Dashboard | [Link](https://platform.openai.com/usage) |
+| Anthropic Usage Dashboard | [Link](https://console.anthropic.com/) |
+| Helicone | [Link](https://www.helicone.ai/) |
+| LiteLLM | [Link](https://github.com/BerriAI/litellm) |
+
+---
+
+### 8. Caching
+
+If 20% of your users ask similar questions, you're paying for the same LLM call 20 times. Caching is the simplest way to reduce costs and latency simultaneously.
+
+| Resource | Link |
+|---|---|
+| Redis Official Docs | [Link](https://redis.io/docs/) |
+| GPTCache | [Link](https://github.com/zilliztech/GPTCache) |
+
+> **GPTCache** uses embedding similarity to find cached responses for semantically similar (not just identical) queries.
+
+---
+
+### Month 5 Milestone ✅
+
+By the end of this month you should be able to:
+
+- [ ] Deploy a FastAPI + LLM app in Docker with proper production configuration
+- [ ] Handle long-running tasks with background jobs and queues
+- [ ] Secure your API with auth, rate limits, and API key management
+- [ ] Trace and debug LLM calls using Langfuse or LangSmith
+- [ ] Manage prompts with version control and rollback capability
+- [ ] Monitor costs in real time and set spending limits
+- [ ] Cache LLM responses to reduce latency and cost
+
+---
+
+## Month 6: Specialize and Become Hireable
+
+**Goal:** Choose one of three directions and go deep. Build a portfolio that proves you can ship.
+
+---
+
+### Direction 1: AI Product Engineer
+
+> Best if you want **startup jobs fast**
+
+Build AI-powered products that real users interact with. Go deeper on the product side.
+
+**Focus on:** LLM apps, RAG, agents, deployment, product UX.
+
+#### End-to-End Product Building
+
+Stop building tutorials. Build products people can use.
+
+| Resource | Link | Notes |
+|---|---|---|
+| Vercel AI SDK | [Link](https://sdk.vercel.ai/docs) | Fastest way to build AI-powered UIs with streaming. |
+| Streamlit | [Link](https://docs.streamlit.io/) | Build data apps and AI demos in pure Python. Ideal for MVPs. |
+| Gradio | [Link](https://www.gradio.app/docs) | Quick ML/AI interfaces. Great for demoing models and prototyping. |
+
+**Goal this month:** Build 2-3 complete projects you can demo. Ship them, put them on GitHub, deploy them somewhere people can try them.
+
+#### Product UX for AI
+
+| Resource | Link |
+|---|---|
+| Google: People + AI Guidebook | [Link](https://pair.withgoogle.com/guidebook/) |
+| Nielsen Norman Group: AI UX Guidelines | [Link](https://www.nngroup.com/topic/artificial-intelligence/) |
+
+**What to focus on:** Handling loading states with streaming, what to show when the model is wrong, letting users give feedback, and designing for the fact that AI output is probabilistic — it will sometimes be wrong.
+
+---
+
+### Direction 2: Applied ML / LLM Engineer
+
+> Best if you want **deeper technical roles**
+
+Go beyond API calls and understand what's happening under the hood.
+
+**Focus on:** Fine-tuning, evaluation, inference optimization, open-source models, training pipelines.
+
+#### When to Fine-tune vs Prompt Engineer
+
+**Decision framework to memorize:**
+1. Start with **prompt engineering** (cheapest, fastest)
+2. Add **RAG** if the model needs access to specific data
+3. **Fine-tune** only when prompting + RAG can't achieve the required quality, consistency, or latency
+
+| Resource | Link |
+|---|---|
+| Google ML Crash Course: Fine-tuning, Distillation, and Prompt Engineering | [Link](https://developers.google.com/machine-learning/crash-course/llm/tuning) |
+| Codecademy: Prompt Engineering vs Fine-Tuning | [Link](https://www.codecademy.com/article/prompt-engineering-vs-fine-tuning) |
+| IBM: RAG vs Fine-Tuning vs Prompt Engineering | [Link](https://www.ibm.com/think/topics/rag-vs-fine-tuning-vs-prompt-engineering) |
+
+#### Fine-tuning in Practice
+
+| Resource | Link |
+|---|---|
+| OpenAI Fine-tuning Guide | [Link](https://platform.openai.com/docs/guides/fine-tuning) |
+| HuggingFace Transformers Fine-tuning Tutorial | [Link](https://huggingface.co/docs/transformers/training) |
+| Unsloth | [Link](https://github.com/unslothai/unsloth) |
+| LLaMA-Factory | [Link](https://github.com/hiyouga/LLaMA-Factory) |
+
+#### Open-Source Models
+
+| Resource | Link | Notes |
+|---|---|---|
+| Ollama | [Link](https://ollama.ai/) | Run open-source LLMs locally with one command. |
+| HuggingFace Model Hub | [Link](https://huggingface.co/models) | Largest repository of open-source models. |
+| vLLM | [Link](https://github.com/vllm-project/vllm) | High-throughput inference engine. Standard for production serving. |
+
+#### Inference Optimization
+
+| Resource | Link |
+|---|---|
+| HuggingFace: Optimizing LLM Inference | [Link](https://huggingface.co/docs/transformers/llm_optims) |
+| NVIDIA TensorRT-LLM | [Link](https://github.com/NVIDIA/TensorRT-LLM) |
+
+---
+
+### Direction 3: AI Automation Engineer
+
+> Best if you want to **build for businesses immediately**
+
+Automate real business workflows with AI. Less about building products, more about solving operational problems.
+
+**Focus on:** Workflow orchestration, business process automation, multi-tool systems, CRM/docs/email/support/ops use cases.
+
+#### Workflow Orchestration
+
+| Resource | Link | Notes |
+|---|---|---|
+| n8n | [Link](https://docs.n8n.io/) | Visual automation with AI nodes. 400+ integrations. Free to self-host. |
+| LangGraph: Multi-Agent Workflows | [Link](https://langchain-ai.github.io/langgraph/concepts/multi_agent/) | Code-first for complex multi-agent systems. |
+| Temporal | [Link](https://docs.temporal.io/) | Durable workflows for long-running, fault-tolerant processes. |
+
+#### Business Process Automation
+
+| Resource | Link |
+|---|---|
+| Zapier AI Actions | [Link](https://zapier.com/ai) |
+| Make (Integromat) | [Link](https://www.make.com/) |
+
+#### CRM, Docs, Email, Support Automation
+
+| Resource | Link |
+|---|---|
+| OpenAI Cookbook: AI-Powered Email Processing | [Link](https://github.com/openai/openai-cookbook) |
+| LangChain: Document Processing Pipelines | [Link](https://python.langchain.com/docs/how_to/#document-loaders) |
+
+**Practice project (Direction 3):** Build an end-to-end lead qualification system that:
+1. Scrapes or imports leads from a CSV, API, or form
+2. Uses an LLM to research each lead (company info, fit assessment)
+3. Scores and ranks leads based on your ICP
+4. Drafts personalized outreach messages
+5. Logs everything to a spreadsheet or CRM
+
+This is a real, sellable automation that businesses actually pay for.
+
+---
+
+## Conclusion
+
+### What to Expect After 6 Months
+
+This roadmap will not make you a senior AI engineer in 6 months. But it will make you someone who can **build, ship, and deploy real AI systems that solve real problems** — and right now, that is exactly what the market is paying for.
+
+### Market Demand
+
+- Job postings grew **25% year-over-year**
+- PwC found a **56% wage premium** for roles requiring AI skills
+- Only **1% of companies** are considered "AI mature" — 99% still need help
+- US Bureau of Labor Statistics projects **26% job growth through 2034**
+
+### Salary Expectations (US, Full-Time)
+
+| Level | Range |
+|---|---|
+| Junior AI Engineer | $90,000 – $130,000 |
+| Mid-level (3-5 years) | $155,000 – $200,000 |
+| Senior | $195,000 – $350,000+ |
+| Average (Glassdoor, March 2026) | $184,757 |
+
+### Freelance Rates
+
+| Service | Rate |
+|---|---|
+| AI agent development | $175 – $300/hour |
+| RAG implementation | $150 – $250/hour |
+| LLM integration | $125 – $200/hour |
+
+### Final Advice
+
+1. **Pick one project from each month and build it.** Not read about it. Not watch a tutorial. Build it, break it, fix it, deploy it, put it on GitHub.
+
+2. **Start sharing what you learn.** Write about it on X, LinkedIn, anywhere. Teaching is the fastest way to learn and it builds your reputation.
+
+3. **Don't wait until you feel ready.** Start applying, start freelancing, start offering services the moment you have working projects. The market doesn't reward perfection — it rewards people who can ship.
+
+---
+
+*6 months is enough to change everything if you actually put in the work.*
