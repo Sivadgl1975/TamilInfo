@@ -1,4 +1,7 @@
 
+
+Explain teh Memory - https://www.newsletter.swirlai.com/p/simple-way-to-explain-memory-in-ai
+
 Here is how you break down 𝗔𝗜 𝗔𝗴𝗲𝗻𝘁 𝗠𝗲𝗺𝗼𝗿𝘆 -  https://x.com/Aurimas_Gr/status/1914663188093632914
 
 Build the Agent from the scratch - https://www.newsletter.swirlai.com/p/building-ai-agents-from-scratch-part 
