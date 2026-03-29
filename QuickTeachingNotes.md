@@ -1,4 +1,6 @@
 
+Agent Harness -  https://x.com/Voxyz_ai/status/2038237755654783107
+
 6 AI Agents That Run a Company — How I Built Them From Scratch  - https://x.com/Voxyz_ai/status/2020272022417289587 https://x.com/Voxyz_ai/status/2019914775061270747 
 
 
