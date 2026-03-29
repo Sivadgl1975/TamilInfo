@@ -19,6 +19,10 @@ Build a Multi-Tool AI Agent - https://amanxai.com/2026/02/25/build-a-multi-tool-
 
 Anatomy of the .claude/ folder - https://x.com/akshay_pachaar/status/2035341800739877091
 
+Hermes Agent - https://x.com/Teknium/status/2029888566709641224/photo/1
+
+
+
 
 
 
