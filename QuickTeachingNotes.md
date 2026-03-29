@@ -1,5 +1,5 @@
 
-6 AI Agents That Run a Company — How I Built Them From Scratch  - https://x.com/Voxyz_ai/status/2020272022417289587
+6 AI Agents That Run a Company — How I Built Them From Scratch  - https://x.com/Voxyz_ai/status/2020272022417289587 https://x.com/Voxyz_ai/status/2019914775061270747 
 
 
 How To Transform Claude Code Into A Self-Evolving System - https://x.com/meta_alchemist/status/2038222105654022325
