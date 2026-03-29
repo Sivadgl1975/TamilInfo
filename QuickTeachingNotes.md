@@ -21,6 +21,8 @@ Anatomy of the .claude/ folder - https://x.com/akshay_pachaar/status/20353418007
 
 Hermes Agent - https://x.com/Teknium/status/2029888566709641224/photo/1
 
+Memory: How Agents Learn - https://www.ashpreetbedi.com/articles/memory
+
 
 
 
