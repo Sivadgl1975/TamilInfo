@@ -1,3 +1,6 @@
+
+Here is how you break down 𝗔𝗜 𝗔𝗴𝗲𝗻𝘁 𝗠𝗲𝗺𝗼𝗿𝘆 -  https://x.com/Aurimas_Gr/status/1914663188093632914
+
 Claude Code CLI - https://x.com/Axel_bitblaze69/status/2037978621684621428 
 
 AI Agent Memory Types Explained - https://x.com/pvergadia/status/2038027186662481982 
