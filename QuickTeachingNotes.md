@@ -23,6 +23,8 @@ Hermes Agent - https://x.com/Teknium/status/2029888566709641224/photo/1
 
 Memory: How Agents Learn - https://www.ashpreetbedi.com/articles/memory
 
+ Making Sense of Memory in AI Agents - https://www.leoniemonigatti.com/blog/memory-in-ai-agents.html
+
 
 
 
