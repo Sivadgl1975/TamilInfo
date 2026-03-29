@@ -7,3 +7,8 @@ Auto Research - https://x.com/shannholmberg/status/2037897792107184628
 
 How to build the agent - https://x.com/hooeem/status/2037250422403113188
 
+
+How to become Claude Architect - https://x.com/hooeem/status/2033198345045336559
+
+
+
