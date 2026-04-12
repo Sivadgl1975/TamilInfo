@@ -1,4 +1,5 @@
 
+AI 30 chapters - https://notes.dsebastien.net/30+Areas/33+Permanent+notes/33.04+Creations/Books/The+Context+Layer+(Book)
 
 How the coding Agents works - https://simonwillison.net/guides/agentic-engineering-patterns/how-coding-agents-work/
 
