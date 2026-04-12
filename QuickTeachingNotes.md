@@ -1,4 +1,7 @@
 
+
+https://notes.dsebastien.net/30+Areas/33+Permanent+notes/33.02+Content/How+coding+agents+work - Quick Notes
+
 AI Advantage - https://x.com/Voxyz_ai/status/2026329821874458907
 
 OpenClaw - https://x.com/Voxyz_ai/status/2015126127711342981
